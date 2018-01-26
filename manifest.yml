@@ -1,0 +1,4 @@
+applications:
+- name: monitor_bot
+  random-route: true
+  memory: 128M
