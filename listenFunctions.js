@@ -4,6 +4,8 @@ const { get_json, calculate } = require("./support")
 
 const onTextAny = msg => {
     const { chat, text } = msg;
+    console.log('onTextAny');
+    console.log(chat.id);
     switch (text) {
         // case "start":
         //     startMonitoring();

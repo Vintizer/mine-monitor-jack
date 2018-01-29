@@ -1,5 +1,4 @@
 const getDataEthermine = (data) => {
-    console.log(data);
     if (data.status === "OK") {
         console.log(parseFloat(data.data.usdPerMin)*60*24*30);
         return parseInt(data.data.reportedHashrate / 1000000)

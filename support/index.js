@@ -71,6 +71,10 @@ module.exports.calculate = (chatId) => {
                         case "sanya":
                             if (coin === "eth" && hashrate < 370) {
                                 resText += "******************************************\n";
+                                bot.sendMessage(
+                                    478916730,
+                                    "Скорость упала - " + hashrate + "\r\nГраничная скорость 370 Мн"
+                                )
                             }
                             userName = "Саня - ";
                             break
