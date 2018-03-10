@@ -69,7 +69,7 @@ module.exports.calculate = (chatId) => {
                             }   
                             break
                         case "sanya":
-                            if (coin === "eth" && hashrate < 351) {
+                            if (coin === "eth" && hashrate < 310) {
                                 resText += "******************************************\n";
                                 bot.sendMessage(
                                     478916730,
