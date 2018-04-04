@@ -64,7 +64,7 @@ module.exports.calculate = (chatId) => {
                     switch (user) {
                         case "mom":
                             userName = "Мама - ";
-                            if (hashrate !== false && (coin === "eth" && hashrate < 40 || coin === "btg" && hashrate < 300)) {
+                            if (hashrate !== false && (coin === "eth" && hashrate < 40 || coin === "btg" && hashrate < 0)) {
                                 resText += "******************************************\n";
                             }   
                             break
