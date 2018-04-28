@@ -73,7 +73,7 @@ module.exports.calculate = (chatId) => {
                                 resText += "******************************************\n";
                                 bot.sendMessage(
                                     478916730,
-                                    "Скорость одной из монет упала - " + hashrate + "\r\n"
+                                    "Скорость одной из монет(" + coin + ") упала - " + hashrate + "\r\n"
                                 )
                             }
                             userName = "Саня - ";
