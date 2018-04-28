@@ -21,6 +21,7 @@ const getDataSuprnova = (body, coin) => {
     switch (coin) {
         case "btg":
         case "zen":
+        case "xvg":
         case "zcl":
             return parseInt(body.getuserstatus.data.hashrate / 1000);
             break;

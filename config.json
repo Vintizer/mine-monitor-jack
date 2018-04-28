@@ -11,6 +11,12 @@
             "coin": "btg",
             "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=df1d5aba77fd1a73450f97c41a66445df9c15eb987bd71e2bb6d3e3938adfd18",
             "bound": "500"
+        },
+        {
+            "pool": "suprnova",
+            "coin": "xvg",
+            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=df1d5aba77fd1a73450f97c41a66445df9c15eb987bd71e2bb6d3e3938adfd18&id=52505",
+            "bound": ""
         }
     ],
     "sanya": [
@@ -19,6 +25,12 @@
             "coin": "eth",
             "url": "https://api.ethermine.org/miner/e4d32ef117d3c40e3c6facabbad9a5a1425d99d2/currentStats",
             "bound": "360"
+        },
+        {
+            "pool": "suprnova",
+            "coin": "xvg",
+            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=56d7c506f8c1e64a5351c46e36efee90e1648bd13327963a341635866d4944c3&id=52506",
+            "bound": ""
         }
     ],
     "me": [
@@ -38,6 +50,12 @@
             "pool": "suprnova",
             "coin": "zcl",
             "url": "https://zcl.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=6cbd8a4b0151b461a1c2c2fafcf50e6b0bb539fcf40dd8a090beb72a8e9d48ef",
+            "bound": ""
+        },
+        {
+            "pool": "suprnova",
+            "coin": "xvg",
+            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=6cbd8a4b0151b461a1c2c2fafcf50e6b0bb539fcf40dd8a090beb72a8e9d48ef",
             "bound": ""
         }
     ]
