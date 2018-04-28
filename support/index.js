@@ -69,7 +69,7 @@ module.exports.calculate = (chatId) => {
                             }   
                             break
                         case "sanya":
-                            if (coin === "eth" && hashrate < 385 || coin === "xvg" && hashrate < 80) {
+                            if (coin === "eth" && hashrate < 330 || coin === "xvg" && hashrate < 70) {
                                 resText += "******************************************\n";
                                 bot.sendMessage(
                                     478916730,
@@ -79,7 +79,7 @@ module.exports.calculate = (chatId) => {
                             userName = "Саня - ";
                             break
                         case "me":
-                            if (coin === "eth" && hashrate < 536 || coin === "zen" && hashrate < 30 || coin === "xvg" && hashrate < 100 || coin === "zcl" && hashrate < 250) {
+                            if (coin === "eth" && hashrate < 430 || coin === "zen" && hashrate < 30 || coin === "xvg" && hashrate < 100 || coin === "zcl" && hashrate < 250) {
                                 resText += "******************************************\n";
                             }
                             userName = "Я - ";
