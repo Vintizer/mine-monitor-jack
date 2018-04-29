@@ -23,7 +23,7 @@
         {
             "pool": "suprnova",
             "coin": "btg",
-            "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=56d7c506f8c1e64a5351c46e36efee90e1648bd13327963a341635866d4944c3",
+            "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=2d583eb6ebdc67cd561f3f945d6b15110bf19dec4c4cb1e359d44bb339280820&id=546228",
             "bound": "500"
         }
     ],
