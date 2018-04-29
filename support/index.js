@@ -79,7 +79,7 @@ module.exports.calculate = (chatId) => {
                             userName = "Саня - ";
                             break
                         case "me":
-                            if (coin === "eth" && hashrate < 430 || coin === "zen" && hashrate < 700 || coin === "xvg" && hashrate < 15 || coin === "zcl" && hashrate < 250) {
+                            if (coin === "eth" && hashrate < 430 || coin === "zen" && hashrate < 500 || coin === "xvg" && hashrate < 15 || coin === "zcl" && hashrate < 250) {
                                 resText += "******************************************\n";
                             }
                             userName = "Я - ";
