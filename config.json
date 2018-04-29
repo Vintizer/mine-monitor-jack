@@ -11,12 +11,6 @@
             "coin": "btg",
             "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=df1d5aba77fd1a73450f97c41a66445df9c15eb987bd71e2bb6d3e3938adfd18",
             "bound": "500"
-        },
-        {
-            "pool": "suprnova",
-            "coin": "xvg",
-            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=df1d5aba77fd1a73450f97c41a66445df9c15eb987bd71e2bb6d3e3938adfd18&id=52505",
-            "bound": ""
         }
     ],
     "sanya": [
@@ -31,12 +25,6 @@
             "coin": "btg",
             "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=56d7c506f8c1e64a5351c46e36efee90e1648bd13327963a341635866d4944c3",
             "bound": "500"
-        },
-        {
-            "pool": "suprnova",
-            "coin": "xvg",
-            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=56d7c506f8c1e64a5351c46e36efee90e1648bd13327963a341635866d4944c3&id=52506",
-            "bound": ""
         }
     ],
     "me": [
