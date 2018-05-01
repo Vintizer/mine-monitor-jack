@@ -48,7 +48,7 @@ const get_json = ({ user, url, pool, coin }) => {
 
 module.exports.calculate = chatId => {
   let btgMomFalse = 0;
-  let btgMyFalse = 0;
+  let zenMyFalse = 0;
   let btgSanyaFalse = 0;
   const urlArray = [];
   for (const user in config) {
@@ -117,15 +117,24 @@ module.exports.calculate = chatId => {
               userName = "Саня - ";
               break;
             case "me":
-              if (
-                (coin === "eth" && hashrate < 590) ||
-                (coin === "zen" && hashrate < 500) ||
-                (coin === "xvg" && hashrate < 15) ||
-                (coin === "zcl" && hashrate < 250)
-              ) {
-                resText += "******************************************\n";
-              }
               userName = "Я - ";
+              if (coin === "zen" && hashrate < 500) {
+                if (zenMyFalse === 2) {
+                  resText += "******************************************\n";
+                } else {
+                  zenMyFalse++;
+                }
+              } else {
+                zenMyFalse = 0;
+                if (
+                  (coin === "eth" && hashrate < 590) ||
+                  (coin === "xvg" && hashrate < 15) ||
+                  (coin === "zcl" && hashrate < 250)
+                ) {
+                  resText += "******************************************\n";
+                }
+              }
+
               break;
           }
           resText += userName + coin.toUpperCase() + " - " + hashrate + " Mh\n";
