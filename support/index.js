@@ -80,7 +80,7 @@ module.exports.calculate = chatId => {
                   }
                 } else {
                   btgMomFalse = 0;
-                  if (coin === "eth" && hashrate < 10) {
+                  if (coin === "eth" && hashrate < 55) {
                     resText += "******************************************\n";
                   }
                 }

@@ -3,7 +3,7 @@
         {
             "pool": "nanopool",
             "coin": "eth",
-            "url": "https://api.nanopool.org/v1/eth/hashrate/0x9d7811866132723592f87ebc4168df6faaf89f1e",
+            "url": "https://api.nanopool.org/v1/eth/reportedhashrate/0x9d7811866132723592f87ebc4168df6faaf89f1e",
             "bound": "40"
         },
         {
