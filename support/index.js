@@ -120,13 +120,8 @@ module.exports.calculate = chatId => {
               break;
             case "me":
               userName = "Я - ";
-              if (coin === "zen" && hashrate < 500) {
+              if (coin === "zen" && hashrate < 100) {
                 resText += "@@@@@@@@@@@@@@@@@\n";
-                if (zenMyFalse === 2) {
-                  resText += "******************************************\n";
-                } else {
-                  zenMyFalse++;
-                }
               } else {
                 zenMyFalse = 0;
                 if (

@@ -19,12 +19,6 @@
             "coin": "eth",
             "url": "https://api.ethermine.org/miner/e4d32ef117d3c40e3c6facabbad9a5a1425d99d2/currentStats",
             "bound": "360"
-        },
-        {
-            "pool": "suprnova",
-            "coin": "btg",
-            "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=2d583eb6ebdc67cd561f3f945d6b15110bf19dec4c4cb1e359d44bb339280820&id=546228",
-            "bound": "500"
         }
     ],
     "me": [
