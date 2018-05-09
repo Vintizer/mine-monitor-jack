@@ -72,7 +72,7 @@ module.exports.calculate = chatId => {
               userName = "Мама - ";
               if (hashrate !== false) {
                 if (coin === "btg" && hashrate < 300) {
-                    resText += "@@@@@@@@@@@@@@@@@\n";
+                  resText += "@@@@@@@@@@@@@@@@@\n";
                   if (btgMomFalse === 2) {
                     resText += "******************************************\n";
                   } else {
@@ -104,7 +104,7 @@ module.exports.calculate = chatId => {
                 }
               } else {
                 btgSanyaFalse = 0;
-                if (coin === "eth" && hashrate < 330) {
+                if (coin === "eth" && hashrate < 410) {
                   resText += "******************************************\n";
                   bot.sendMessage(
                     478916730,
@@ -125,7 +125,7 @@ module.exports.calculate = chatId => {
               } else {
                 zenMyFalse = 0;
                 if (
-                  (coin === "eth" && hashrate < 590) ||
+                  (coin === "eth" && hashrate < 680) ||
                   (coin === "xvg" && hashrate < 15) ||
                   (coin === "zcl" && hashrate < 250)
                 ) {
