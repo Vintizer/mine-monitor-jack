@@ -21,6 +21,6 @@ const onTextAny = msg => {
 calculate(173191632);
 setInterval(() => {
     calculate(173191632);
-}, 360000)
+}, 150000)
 
 module.exports.onTextAny = onTextAny;
