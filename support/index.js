@@ -127,7 +127,7 @@ module.exports.calculate = chatId => {
                 if (
                   (coin === "eth" && hashrate < 665) ||
                   (coin === "zcl" && hashrate < 250) ||
-                  (coin === "zen" && hashrate < 350)
+                  (coin === "zen" && hashrate < 200)
                 ) {
                   resText += "******************************************\n";
                 }
