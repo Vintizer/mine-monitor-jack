@@ -126,7 +126,6 @@ module.exports.calculate = chatId => {
                 zenMyFalse = 0;
                 if (
                   (coin === "eth" && hashrate < 665) ||
-                  // (coin === "xvg" && hashrate < 15) ||
                   (coin === "zcl" && hashrate < 250) ||
                   (coin === "zen" && hashrate < 350)
                 ) {
