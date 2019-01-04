@@ -8,20 +8,26 @@ const {
   getDataSuprnova
 } = require("./getData");
 
+const sanyaWorkersMap = {
+  asus: 105,
+  first: 115,
+  new: 117,
+  sanya1060: 98,
+}
 const get_json = ({ user, url, pool, coin }) => {
-  return new Promise(function(resolve, reject) {
-    https.get(url, function(res) {
+  return new Promise(function (resolve, reject) {
+    https.get(url, function (res) {
       let hashrate;
       let body = "";
-      res.on("data", function(chunk) {
+      res.on("data", function (chunk) {
         body += chunk;
       });
 
-      res.on("end", function() {
+      res.on("end", function () {
         let resBody;
         try {
           resBody = JSON.parse(body);
-        } catch (err) {}
+        } catch (err) { }
         if (resBody) {
           switch (pool) {
             case "ethermine":
@@ -94,30 +100,47 @@ module.exports.calculate = chatId => {
                   bot.sendMessage(
                     478916730,
                     "Скорость одной из монет(" +
-                      coin +
-                      ") упала - " +
-                      hashrate +
-                      "\r\n"
+                    coin +
+                    ") упала - " +
+                    hashrate +
+                    "\r\n"
                   );
                 } else {
                   btgSanyaFalse++;
                 }
               } else {
                 btgSanyaFalse = 0;
-                if (coin === "eth" && hashrate < 90) {
+                if (coin === "eth" && hashrate < 300) {
                   resText += "******************************************\n";
                   bot.sendMessage(
                     478916730,
                     "Скорость одной из монет(" +
-                      coin +
-                      ") упала - " +
-                      hashrate +
-                      "\r\n"
+                    coin +
+                    ") упала - " +
+                    hashrate +
+                    "\r\n"
                   );
                 }
               }
               userName = "Саня - ";
               break;
+            case "sanyaByWorkers":
+              hashrate.forEach(worker => {
+                const difference = 0.25;
+                const condition = (sanyaWorkersMap[worker.workerName] - worker.hashrate) / sanyaWorkersMap[worker.workerName];
+								if (condition > difference) {
+                  const messageText = `Скорость воркера ${worker.workerName} упала более чем на 25% от рассчитываемой ${sanyaWorkersMap[worker.workerName]}MH/s\r\n`
+                  bot.sendMessage(
+                    478916730,
+                    messageText
+                  );
+                  bot.sendMessage(
+                    327277912,
+                    messageText
+                  );
+                }
+              })
+            break;
             case "me":
               userName = "Я - ";
               if (coin === "zen" && hashrate < 100) {

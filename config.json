@@ -1,18 +1,4 @@
 {
-    "mom": [
-        {
-            "pool": "nanopool",
-            "coin": "eth",
-            "url": "https://api.nanopool.org/v1/eth/reportedhashrate/0x9d7811866132723592f87ebc4168df6faaf89f1e",
-            "bound": "40"
-        },
-        {
-            "pool": "suprnova",
-            "coin": "btg",
-            "url": "https://btg.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=df1d5aba77fd1a73450f97c41a66445df9c15eb987bd71e2bb6d3e3938adfd18",
-            "bound": "500"
-        }
-    ],
     "sanya": [
         {
             "pool": "ethermine",
@@ -21,30 +7,12 @@
             "bound": "360"
         }
     ],
-    "me": [
+    "sanyaByWorkers": [
         {
             "pool": "ethermine",
             "coin": "eth",
-            "url": "https://api.ethermine.org/miner/9cee301c8fa73924c20ce694557f0471e1234549/currentStats",
-            "bound": "570"
-        },
-        {
-            "pool": "suprnova",
-            "coin": "zen",
-            "url": "https://zen.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=6cbd8a4b0151b461a1c2c2fafcf50e6b0bb539fcf40dd8a090beb72a8e9d48ef",
-            "bound": ""
-        },
-        {
-            "pool": "suprnova",
-            "coin": "zcl",
-            "url": "https://zcl.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=6cbd8a4b0151b461a1c2c2fafcf50e6b0bb539fcf40dd8a090beb72a8e9d48ef",
-            "bound": ""
-        },
-        {
-            "pool": "suprnova",
-            "coin": "xvg",
-            "url": "https://xvg-lyra.suprnova.cc/index.php?page=api&action=getuserstatus&api_key=6cbd8a4b0151b461a1c2c2fafcf50e6b0bb539fcf40dd8a090beb72a8e9d48ef",
-            "bound": ""
+            "url": "https://api.ethermine.org/miner/e4d32ef117d3c40e3c6facabbad9a5a1425d99d2/workers",
+            "bound": "360"
         }
     ]
 }

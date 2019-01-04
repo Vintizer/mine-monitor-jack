@@ -1,7 +1,17 @@
 const getDataEthermine = (data) => {
     if (data.status === "OK") {
-        console.log(parseFloat(data.data.usdPerMin)*60*24*30);
-        return parseInt(data.data.reportedHashrate / 1000000)
+        if (data.data.length) {
+            let hashrateMap = {};
+            return data.data.map(worker => {
+                return {
+                    workerName: worker.worker,
+                    hashrate: worker.reportedHashrate / 1000000
+                }
+            });
+        } else {
+            console.log(parseFloat(data.data.usdPerMin) * 60 * 24 * 30);
+            return parseInt(data.data.reportedHashrate / 1000000)
+        }
     } else {
         return data.status;
     }
